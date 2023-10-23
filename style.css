@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(38, 38, 85);
+}
+.container {
+  position: relative;
+  max-width: 350px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 20px 20px 20px;
+  background: rgb(27, 27, 54);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.upper_display {
+  position: relative;
+  max-width: 350px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 0.5rem;
+  background: rgb(27, 27, 54);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+}
+.upper_display .display {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  padding: 0.4rem;
+  /* margin-bottom: 10px; */
+  border-radius: 6px;
+  font-size: 25px;
+  color: #eee;
+  pointer-events: none;
+  background: rgb(27, 27, 54);
+}
+.buttons {
+  display: grid;
+  grid-gap: 17px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.buttons button {
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 900;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #eee;
+  color: rgb(27, 27, 54);
+  box-shadow: 0 3px #bababa;
+}
+.buttons button:active,
+.last_button button:active {
+  transform: scale(0.99);
+}
+
+.last_button {
+  display: grid;
+  grid-gap: 17px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.last_button button {
+  padding: 6px;
+  margin-top: 17px;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  color: #eee;
+}
+.buttons .operator1 {
+  background-color: rgb(80, 80, 155);
+  color: #eee;
+  box-shadow: 0 3px rgb(62, 62, 130);
+}
+.last_button .operator6 {
+  background: rgb(76, 76, 139);
+  box-shadow: 0 3px rgb(62, 62, 130);
+}
+.last_button .operator7 {
+  background: rgb(180, 55, 55);
+  box-shadow: 0 3px rgb(124, 38, 38);
+}
